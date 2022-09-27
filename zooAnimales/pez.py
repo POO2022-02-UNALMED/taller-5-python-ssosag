@@ -6,8 +6,8 @@ class Pez(Animal):
     bacalaos = 0
     nPeces = 0
 
-    def __init__(self, nombre, edad, habitat, genero, zona, colorEscamas, cantidadAletas):
-        super().__init__(nombre, edad, habitat, genero, zona)
+    def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
+        super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
         Pez.nPeces = 1
@@ -16,13 +16,13 @@ class Pez(Animal):
     def cantidadPeces(clc):
         return clc.nPeces
 
-    def crearSalmon(self, nombre, edad, genero, zona):
-        salmon = Pez(nombre, edad, "oceano", genero, zona, "rojo", 6)
+    def crearSalmon(self, nombre, edad, genero):
+        salmon = Pez(nombre, edad, "oceano", genero, "rojo", 6)
         Pez.salmones += 1
         return salmon
 
-    def crearBacalao(self, nombre, edad, genero, zona):
-        bacalao = Pez(nombre, edad, "oceano", genero, zona, "gris", 6)
+    def crearBacalao(self, nombre, edad, genero):
+        bacalao = Pez(nombre, edad, "oceano", genero, "gris", 6)
         Pez.bacalaos += 1
         return bacalao
 
