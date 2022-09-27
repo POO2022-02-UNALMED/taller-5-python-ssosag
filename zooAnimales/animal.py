@@ -17,11 +17,11 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
 
-        cadena = "Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\n" + \
-        "Aves: " + str(Ave.cantidadAves()) + "\n" +\
-        "Reptiles: " + str(Reptil.cantidadReptiles()) + "\n" +\
-        "Peces: " + str(Pez.cantidadPeces()) + "\n" +\
-        "Anfibios: " + str(Anfibio.cantidadAnfibios())
+        cadena = "Mamiferos : " + str(Mamifero.cantidadMamiferos()) + "\n" + \
+        "Aves : " + str(Ave.cantidadAves()) + "\n" +\
+        "Reptiles : " + str(Reptil.cantidadReptiles()) + "\n" +\
+        "Peces : " + str(Pez.cantidadPeces()) + "\n" +\
+        "Anfibios : " + str(Anfibio.cantidadAnfibios())
 	    
         return cadena
 
