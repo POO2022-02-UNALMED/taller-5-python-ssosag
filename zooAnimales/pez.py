@@ -34,10 +34,10 @@ class Pez(Animal):
     def setListado(clc, listado):
         clc._listado = listado
 
-    def getColorEscama(self):
+    def getColorEscamas(self):
         return self._colorEscamas
 
-    def setColorEscama(self,color):
+    def setColorEscamas(self,color):
         self._colorEscamas = color
 
     def getCantidadAletas(self):
