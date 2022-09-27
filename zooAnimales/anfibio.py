@@ -16,12 +16,12 @@ class Anfibio(Animal):
     def cantidadAnfibios(clc):
         return clc.nAnfibios
 
-    def crearRana(self, nombre, edad, genero):
+    def crearRana(nombre, edad, genero):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         Anfibio.ranas += 1
         return rana
 
-    def crearSalamandra(self, nombre, edad, genero):
+    def crearSalamandra(nombre, edad, genero):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio.salamandras += 1
         return salamandra

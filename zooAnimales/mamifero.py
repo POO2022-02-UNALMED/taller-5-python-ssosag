@@ -16,12 +16,12 @@ class Mamifero(Animal):
     def cantidadMamiferos(clc):
         return Mamifero.nMamiferos
 
-    def crearCaballo(self, nombre, edad, genero):
+    def crearCaballo(nombre, edad, genero):
         caballo = Mamifero(nombre, edad, 'pradera', genero, True, 4)
         Mamifero.caballos += 1
         return caballo
 
-    def crearLeon(self, nombre, edad, genero):
+    def crearLeon(nombre, edad, genero):
         leon = Mamifero(nombre, edad, 'selva', genero, True, 4)
         Mamifero.leones += 1
         return leon
