@@ -17,16 +17,16 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
 
-        cadena = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + \
-        "Aves: " + Ave.cantidadAves() + "\n" +\
-        "Reptiles: " + Reptil.cantidadReptiles() + "\n" +\
-        "Peces: " + Pez.cantidadPeces() + "\n" +\
-        "Anfibios: " + Anfibio.cantidadAnfibios()
+        cadena = "Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\n" + \
+        "Aves: " + str(Ave.cantidadAves()) + "\n" +\
+        "Reptiles: " + str(Reptil.cantidadReptiles()) + "\n" +\
+        "Peces: " + str(Pez.cantidadPeces()) + "\n" +\
+        "Anfibios: " + str(Anfibio.cantidadAnfibios())
 	    
         return cadena
 
     def toString(self):
-        cadena = 'Mi nombre es ' + self._nombre + ', tengo una edad de' + str(self._edad)\
+        cadena = 'Mi nombre es ' + self._nombre + ', tengo una edad de ' + str(self._edad)\
         + ', habito en ' + self._habitat + ' y mi genero es ' + self._genero
         if (self._zona != None):
             cadenaCompleta = cadena + ', la zona en la que me ubico es ' + self._zona.getNombre() + ', en el ' + self._zona.getZoo.getNombre()
